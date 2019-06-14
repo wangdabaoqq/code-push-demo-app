@@ -59,6 +59,8 @@ class App extends Component<{}> {
   }
 
   getUpdateMetadata() {
+    console.log(111);
+    
     CodePush.getUpdateMetadata(CodePush.UpdateState.RUNNING)
       .then((metadata: LocalPackage) => {
         this.setState({ syncMessage: metadata ? JSON.stringify(metadata) : "Running binary version", progress: false });
@@ -97,7 +99,7 @@ class App extends Component<{}> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to CodePush!
+          Welcome to CodePush!1111122221wa
         </Text>
         <TouchableOpacity onPress={this.sync.bind(this)}>
           <Text style={styles.syncButton}>Press for background sync</Text>
