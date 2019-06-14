@@ -87,8 +87,7 @@ class App extends Component<Props> {
         </Text>
 
         <Text style={styles.instructions}>
-          测试111111
-          这是更新的版本
+          这是更新的版本111
         </Text>
       </View>
     );
